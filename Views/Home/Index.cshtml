@@ -1,0 +1,21 @@
+﻿@model IList<Blog.Models.Post>
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    @foreach (Blog.Models.Post p in Model)
+    {
+        <article>
+            <h1>@p.Titulo</h1>
+            <p>@p.Resumo</p>
+        </article>
+    }
+
+    <a href="/Post">Administração</a>
+</body>
+</html>

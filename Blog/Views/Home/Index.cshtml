@@ -1,0 +1,11 @@
+﻿@model IList<Blog.Models.Post>
+<div>
+    @foreach (Blog.Models.Post p in Model)
+    {
+        <article>
+            <h1>@p.Titulo</h1>
+            <p>@p.Resumo</p>
+        </article>
+    }
+    @Html.ActionLink("Administração", "Index", "Admin/Post")
+</div>

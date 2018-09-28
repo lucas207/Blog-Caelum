@@ -1,0 +1,21 @@
+﻿
+@model Blog.Models.Post
+
+
+<div class="form-group">
+    @Html.LabelFor(Model => Model.Titulo)
+    @Html.TextBoxFor(Model => Model.Titulo)
+    @Html.ValidationMessageFor(Model => Model.Titulo)
+</div>
+
+<div class="form-group">
+    @Html.LabelFor(Model => Model.Resumo)
+    @Html.TextBoxFor(Model => Model.Resumo)
+    @Html.ValidationMessageFor(Model => Model.Resumo)
+</div>
+
+<div class="form-group">
+    @Html.LabelFor(Model => Model.Categoria)
+    @Html.TextBoxFor(Model => Model.Categoria)
+    @Html.ValidationMessageFor(Model => Model.Categoria)
+</div>

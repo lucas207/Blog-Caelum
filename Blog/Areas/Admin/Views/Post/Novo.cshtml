@@ -1,0 +1,16 @@
+﻿
+@model Blog.Models.Post
+
+
+
+<h2>Novo Post</h2>
+@using (Html.BeginForm("Salvar", "Post"))
+{
+    @Html.EditorFor(Model => Model)
+
+    <button type="submit" class="btn btn-primary">Salvar</button>
+}
+
+@section Scripts{ 
+    @Html.Partial("_Scripts")
+}
